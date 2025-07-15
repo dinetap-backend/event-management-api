@@ -22,12 +22,9 @@ A backend REST API built with Node.js, Express, Sequelize, and PostgreSQL to man
 - PostgreSQL
 - Git
 
-### 🔧 Setup
 
-```bash
-git clone https://github.com/dinetap-backend/event-management-api.git
-cd event-management-api
-npm install
+
+
 
 ⚙️ Configure .env
 env
@@ -51,15 +48,17 @@ Copy
 Edit
 npx sequelize-cli db:migrate  # if using CLI
 npm run dev                   # with nodemon
+
+
+
 🔌 API Endpoints
+
 👤 Users
+
 ➕ Create User
-h
 Copy
 Edit
 POST /api/users
-Body:
-
 json
 Copy
 Edit
@@ -67,14 +66,13 @@ Edit
   "name": "Alice",
   "email": "alice@example.com"
 }
+
+
 📅 Events
 ➕ Create Event
-h
 Copy
 Edit
 POST /api/events
-Body:
-
 json
 Copy
 Edit
@@ -84,39 +82,50 @@ Edit
   "location": "Delhi",
   "capacity": 100
 }
+
+
 🔍 Get Event Details
 http
 Copy
 Edit
 GET /api/events/:id
+
+
 ✅ Register User
 http
 Copy
 Edit
 POST /api/events/:id/register
 Body:
-
 json
 Copy
 Edit
 {
   "userId": 1
 }
+
+
 ❌ Cancel Registration
 http
 Copy
 Edit
 DELETE /api/events/:id/register/:userId
+
+
 📆 List Upcoming Events
 http
 Copy
 Edit
 GET /api/events/upcoming
+
+
 📊 Event Stats
 http
 Copy
 Edit
 GET /api/events/:id/stats
+
+
 📎 Example Response: Event Stats
 json
 Copy
@@ -136,4 +145,21 @@ Custom sorting for upcoming events
 Proper error messages & HTTP codes
 
 🧑‍💻 Author
- Shahnawaz
+Your Name
+
+
+
+
+
+
+
+
+
+
+### 🔧 Setup
+
+```bash
+git clone https://github.com/dinetap-backend/event-management-api.git
+cd event-management-api
+npm install
+
